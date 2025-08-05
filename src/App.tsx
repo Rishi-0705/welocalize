@@ -159,8 +159,8 @@ function App() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
-                src="/public/welocalize logo.jpg" 
-                alt="WeLocalize Logo" 
+                src="/public/welocalizelogo.jpg" 
+                alt="WeLocalizelogo" 
                 className="h-12 w-auto"
               />
               <span className="text-2xl font-bold text-[#333]">WeLocalize</span>
