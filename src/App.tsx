@@ -725,7 +725,7 @@ Please provide more details about available opportunities.`;
             <div>
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/public/welocalize logo.jpg" 
+                  src="welocalizelogo.jpg" 
                   alt="WeLocalize Logo" 
                   className="h-10 w-auto"
                 />
