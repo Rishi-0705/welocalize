@@ -159,7 +159,7 @@ function App() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
-                src="/public/welocalizelogo.jpg" 
+                src="/welocalizelogo.jpg" 
                 alt="WeLocalizelogo" 
                 className="h-12 w-auto"
               />
