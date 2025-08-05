@@ -16,6 +16,7 @@ import {
   StarIcon,
   Play,
   Award,
+  Send,
   Zap
 } from 'lucide-react';
 
@@ -193,7 +194,7 @@ function App() {
                 Testimonials
               </button>
               <a
-                href="https://wa.me/639158353525"
+                href="https://t.me/Joyce_Warren1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#FF6B35] text-white px-8 py-3 rounded-full hover:bg-[#FF6B35]/90 transition-all duration-300 transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl"
@@ -240,7 +241,7 @@ function App() {
                   Testimonials
                 </button>
                 <a
-                  href="https://wa.me/639158353525"
+                  href="https://t.me/Joyce_Warren1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block bg-[#FF6B35] text-white px-8 py-4 rounded-full hover:bg-[#FF6B35]/90 transition-all duration-300 font-semibold text-lg text-center shadow-lg hover:shadow-xl mt-6"
@@ -299,7 +300,7 @@ function App() {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12 animate-fade-in-up animation-delay-600">
                 <a
-                  href="https://wa.me/639158353525"
+                  href="https://t.me/Joyce_Warren1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-gradient-to-r from-orange-600 to-orange-500 text-white px-8 py-4 rounded-full hover:from-orange-700 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl font-semibold text-lg flex items-center space-x-2 shadow-lg hover:-translate-y-1"
@@ -455,7 +456,7 @@ function App() {
                         {job.salary}
                       </span>
                       <a
-                        href={`https://wa.me/639158353525?text=Hi! I'm interested in applying for the ${job.title} position. `}
+                        href="https://t.me/Joyce_Warren1"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-[#FF6B35] text-white px-6 py-2 rounded-full hover:bg-[#FF6B35]/90 transition-all duration-300 font-medium transform hover:scale-105"
@@ -474,7 +475,7 @@ function App() {
               Don't see the perfect fit? We're always looking for talented individuals!
             </p>
             <a
-              href="https://wa.me/639158353525"
+              href="https://t.me/Joyce_Warren1"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition-all duration-300 transform hover:scale-105 font-semibold shadow-lg"
@@ -616,103 +617,26 @@ function App() {
 
       {/* CTA Section with Application Form */}
       <section className="py-20 bg-gradient-to-r from-[#FF6B35] to-[#FF6B35]/90 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 fade-in-on-scroll">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Ready to Start Your Remote Journey?
-            </h2>
-            <p className="text-xl md:text-2xl mb-8 opacity-95 max-w-3xl mx-auto">
-              Join thousands of professionals who have found their perfect remote job through WeLocalize
-            </p>
-          </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in-on-scroll">
+    <h2 className="text-3xl md:text-5xl font-bold mb-6">
+      Ready to Start Your Remote Journey?
+    </h2>
+    <p className="text-xl md:text-2xl mb-8 opacity-95 max-w-3xl mx-auto">
+      Join thousands of professionals who have found their perfect remote job through WeLocalize.
+    </p>
 
-          {/* Application Form */}
-          <div className="max-w-2xl mx-auto fade-in-on-scroll">
-            <div className="bg-white rounded-2xl p-8 shadow-2xl border-2 border-[#FF6B35]/20">
-              <h3 className="text-2xl font-bold mb-6 text-center text-[#333]">Submit Your Application</h3>
-              
-              <form onSubmit={(e) => {
-                e.preventDefault();
-                const formData = new FormData(e.target as HTMLFormElement);
-                const fullName = formData.get('fullName') as string;
-                const phoneNumber = formData.get('phoneNumber') as string;
-                const country = formData.get('country') as string;
-                
-                const message = `Hi! I'm interested in applying for a remote position at WeLocalize.
+    <a
+      href="https://t.me/Joyce_Warren1" // Replace with your client's Telegram username or link
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-white text-[#FF6B35] px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl"
+    >
+      Apply Now 
+    </a>
+  </div>
+</section>
 
-Full Name: ${fullName}
-Phone Number: ${phoneNumber}
-Country: ${country}
 
-Please provide more details about available opportunities.`;
-
-                const whatsappUrl = `https://wa.me/639158353525?text=${encodeURIComponent(message)}`;
-                window.open(whatsappUrl, '_blank');
-              }} className="space-y-6">
-                
-                <div>
-                  <label htmlFor="fullName" className="block text-sm font-semibold mb-2 text-[#333]">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-50 border-2 border-gray-200 text-[#333] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]/50 focus:border-[#FF6B35] transition-all duration-300"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phoneNumber" className="block text-sm font-semibold mb-2 text-[#333]">
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-50 border-2 border-gray-200 text-[#333] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#FF6B35]/50 focus:border-[#FF6B35] transition-all duration-300"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="country" className="block text-sm font-semibold mb-2 text-[#333]">
-                    Country *
-                  </label>
-                  <select
-                    id="country"
-                    name="country"
-                    required
-                    className="w-full px-4 py-3 rounded-lg bg-gray-50 border-2 border-gray-200 text-[#333] focus:outline-none focus:ring-2 focus:ring-[#FF6B35]/50 focus:border-[#FF6B35] transition-all duration-300"
-                  >
-                    <option value="" className="text-gray-500">Select your country</option>
-                    <option value="Malaysia" className="text-[#333]">Malaysia</option>
-                    <option value="Philippines" className="text-[#333]">Philippines</option>
-                    <option value="Spain" className="text-[#333]">Spain</option>
-                    <option value="USA" className="text-[#333]">USA</option>
-                    <option value="Other" className="text-[#333]">Other</option>
-                  </select>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-[#FF6B35] text-white px-8 py-4 rounded-full hover:bg-[#FF6B35]/90 transition-all duration-300 transform hover:scale-105 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
-                >
-                  <MessageCircle className="w-6 h-6" />
-                  <span>Submit Application via WhatsApp</span>
-                </button>
-              </form>
-
-              <p className="text-gray-600 text-sm text-center mt-4">
-                By submitting this form, you agree to be contacted via WhatsApp for job opportunities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white py-16 relative overflow-hidden">
@@ -738,7 +662,7 @@ Please provide more details about available opportunities.`;
               {/* Contact Information */}
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/639158353525"
+                  href="https://t.me/Joyce_Warren1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 text-gray-300 hover:text-[#FF6B35] transition-colors duration-300 group"
@@ -746,34 +670,14 @@ Please provide more details about available opportunities.`;
                   <div className="w-10 h-10 bg-[#FF6B35] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <MessageCircle className="w-5 h-5 text-white" />
                   </div>
-                  <span>Chat on WhatsApp</span>
+                  <span>Contact Us</span>
                 </a>
                 
-                <a
-                  href="https://instagram.com/welocalize"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-300 hover:text-[#FF6B35] transition-colors duration-300 group"
-                >
-                  <div className="w-10 h-10 bg-[#FF6B35] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                  </div>
-                  <span>@welocalize</span>
-                </a>
                 
-                <a
-                  href="tel:+639158353525"
-                  className="flex items-center space-x-3 text-gray-300 hover:text-[#FF6B35] transition-colors duration-300 group"
-                >
-                  <div className="w-10 h-10 bg-[#FF6B35] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <span>+63 915 835 3525</span>
-                </a>
+                  
+                
+                
+                
               </div>
             </div>
 
@@ -809,7 +713,7 @@ Please provide more details about available opportunities.`;
                     Testimonials
                   </button>
                   <a
-                    href="https://wa.me/639158353525"
+                    href="https://t.me/Joyce_Warren1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-gray-300 hover:text-[#FF6B35] transition-colors duration-300 text-lg"
@@ -832,13 +736,13 @@ Please provide more details about available opportunities.`;
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/639158353525"
+        href="https://t.me/Joyce_Warren1"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 z-40 animate-pulse"
+        className="fixed bottom-6 right-6 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-110 z-40 animate-pulse"
         aria-label="Contact us on WhatsApp"
       >
-        <MessageCircle className="w-6 h-6" />
+        <Send className="w-6 h-6" />
       </a>
 
       <style jsx>{`
