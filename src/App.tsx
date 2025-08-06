@@ -280,7 +280,7 @@ function App() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 animate-fade-in-up shadow-lg">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                Trusted by 10,000+ Remote Workers
+                Trusted by Remote Workers Worldwide
               </div>
 
               {/* Main Heading with gradient text */}
